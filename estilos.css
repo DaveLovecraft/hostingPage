@@ -1,0 +1,439 @@
+/* Estilos generaless */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Inician estilos para la seccion principal y portada */
+
+.barra_titulo{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    margin-left: 50%;
+}
+
+.barra_busqueda{
+    margin-left: 15%;
+}
+
+.barra_busqueda input{
+    width: 250px;
+    padding: 5px 0 3px 4px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid gray;
+}
+
+.barra_busqueda span i{
+    margin-left: -5px;
+    background-color: aqua;
+    border: 1px solid gray;
+    font-size: 16px;
+    padding: 3px 2px 4.5px 2px;
+}
+
+.barra_usuario{
+    margin-left: 10px;
+}
+
+.barra_usuario span i{
+    font-size: 20px;
+    margin-left: 8px;
+    color: #192E4F;
+    transition: 300ms;
+}
+
+.barra_usuario span i:hover{
+    color: red;
+}
+
+.navbar{
+    background-color: #B69A76;
+}
+
+.navbar ul{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    transition: ease-in-out 300ms;
+}
+
+.navbar ul li  a{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+}
+
+.navbar ul li:hover{
+    
+    padding-bottom: 5px;
+}
+
+.navbar ul li a:hover{
+    color: #192E4F;
+    font-weight: 500;
+}
+
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(img/portada.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+}
+
+.portada h1{
+    padding: 20px;
+}
+
+.galeria_recomendacion{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo_recomendacion{
+    color: red;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+.galeria_contenedor{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria_contenedor h2{
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.galeria_contenedor h3{
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.galeria_contenedor button{
+    background-color: red;
+    color: aliceblue;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in 300ms;
+}
+
+.portadaLibro{
+    height: 300px;
+    width: 200px;
+    transition: ease-in-out 300ms;
+    box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.portadaLibro:hover{
+    height: 310px;
+    width: 210px;
+    box-shadow: 1px 2px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.galeria_contenedor button:hover{
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid gray;
+}
+
+/* Terminan estilos para seccion principal y portada */
+
+/* Comienza estilos de la seccion catalogo de libros */
+
+.catalogo_header{
+    margin-top: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.catalogo_header h3{
+    margin-left: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: red;
+}
+
+.catalogo_header input{
+    border: none;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition:  300ms;
+}
+
+
+.catalogo_header input:hover{
+    text-decoration: underline;
+    transition:  300ms;
+}
+
+.catalogoLibros_lista{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.itemLibro{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.itemLibro h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.itemLibro h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.precio_compra{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.precio_compra p{
+    color: #B69A76;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.precio_compra button{
+    background-color: red;
+    color: aliceblue;
+    padding: 10px 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in 300ms;
+}
+
+.precio_compra button:hover{
+    background-color: aliceblue;
+    color: red;
+    border: 1px solid gray;
+}
+
+/* Terminan estilos para galeria de libros en venta */
+
+/* Inician estilos para seccion nosotros */
+
+.nosotros{
+    height: 500px;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+
+.nosotros_txt{
+    width: 45%;
+}
+
+.nosotros_txt h2{
+    color: red;
+    font-family: "Roboto", sans-serif;
+}
+
+.nosotros_txt:nth-child(1) p {
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.img_nosotros{
+    height: 380px;
+    width: 520px;
+    background-image: url(/img/libreria.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Terminan estilos de la seccion nosotros */
+
+/* Inician estilos para el pie de pagina  */
+
+footer{
+    background-color: #B69A76;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_fila{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer_columnaUno{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0px 0px 0px 15px;
+}
+
+.footer_columnaUno h4{
+    margin: 0 0 5px 0;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.footer_columnaUno hr{
+    width: 100%;
+    color: aliceblue;
+    height: 0px;
+}
+
+.footer_columnaUno p{
+    margin: 10px 0 0 0;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.footer_columnaUno p i{
+    color: #192E4F;
+    font-size: 16px;
+}
+
+.footer_columnaUno span{
+    margin-top: 20px;
+    align-self: center;
+}
+
+.footer_columnaUno span i{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.footer_columnaUno span img{
+    margin-bottom: -8px;
+    height: 45px;
+    width: 45px;
+}
+
+.footer_columnaDos{
+    width: 30%;
+}
+
+.footer_columnaDos h4{
+    margin: 0 0 5px 0;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.footer_columnaDos ul li{
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
+
+.footer_columnaDos ul li  a{
+    margin: 10px 0 0 0;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer_columnaDos ul li  a:hover{
+    color: #192E4F;
+}
+
+.footer_columnaTres{
+    width: 30%;
+}
+
+.footer_columnaTres h4{
+    margin: 0 0 5px 0;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.footer_columnaTres p{
+    margin: 10px 0 0 0;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.footer_columnaTres input{
+    width: 80%;
+    height: 32px;
+    margin: 10px 0 0 0;
+    padding: 0 5px;
+}
+
+.footer_columnaTres button{
+    padding: 8px;
+    margin-left: -5px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+}
+
+.derechos_autor{
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
